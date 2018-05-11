@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Dashboard no data loaded renders an empty page 1`] = `
+<div class="dashboard container">
+    <section>
+        <h1>Dashboard</h1>
+    </section>
+    <section>
+        <div id="person-list">
+            <div id="person-list">
+                <div id="person" class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Peter Jackson</h4><a href="#/persons/1/edit" class="">edit</a></div>
+                </div>
+                <div id="person" class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Elijah Wood</h4><a href="#/persons/2/edit" class="">edit</a></div>
+                </div>
+                <div id="person" class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Orlando Bloom</h4><a href="#/persons/3/edit" class="">edit</a></div>
+                </div>
+                <div id="person" class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">Christopher Lee</h4><a href="#/persons/4/edit" class="">edit</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+`;

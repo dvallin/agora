@@ -1,0 +1,48 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "es6",
+        "plugins": [
+            {
+                "name": "tslint-language-service"
+            }
+        ],
+        "lib": [
+            "dom",
+            "es2015"
+        ],
+        "declaration": true,
+        "sourceMap": true,
+        "removeComments": true,
+        "strict": true,
+        "noImplicitThis": false,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "noFallthroughCasesInSwitch": true,
+        "moduleResolution": "node",
+        "baseUrl": ".",
+        "paths": {
+            "@/*": [
+                "src/*"
+            ]
+        },
+        "typeRoots": [
+            "node_modules/@types",
+            "node_modules/vue/types",
+            "types"
+        ],
+        "types": [
+            "jest",
+            "node",
+            "vue"
+        ],
+        "allowSyntheticDefaultImports": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true
+    },
+    "include": [
+        "src/**/*",
+        "node_modules/@types"
+    ]
+}
