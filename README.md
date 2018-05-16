@@ -21,3 +21,9 @@ Once you have accustomed yourself with the setup (granted, it may be a bit overw
 5. Add Tags to Persons and make them filterable
 6. ?
 7. Profit
+
+## Resources
+Curated List of all things Vue.JS https://github.com/vuejs/awesome-vue  
+A Vue.JS Api cheatsheet https://vuejs-tips.github.io/cheatsheet/  
+A VueX Api cheatsheet https://vuejs-tips.github.io/vuex-cheatsheet/  
+The library we use for Component Annotations https://github.com/kaorun343/vue-property-decorator
