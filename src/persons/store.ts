@@ -27,6 +27,12 @@ export const module: Module<State, RootState> = {
         },
         personIndexById(state: State): (id: number) => number {
             return id => state.data.findIndex(person => person.id === id)
+        },
+        nextId(state: State): number {
+            const maximumId = state.data
+                .map(person => person.id)
+                .reduce((current, next) => Math.max(current, next))
+            return maximumId + 1
         }
     },
     actions: {
@@ -40,11 +46,19 @@ export const module: Module<State, RootState> = {
                 }
             }
             return success
+        },
+        createPerson(context: ActionContext<State, RootState>, name: string): boolean {
+            const nextId = context.getters.nextId
+            context.commit("personCreated", new Person(nextId, name))
+            return true
         }
     },
     mutations: {
         personUpdated(state: State, payload: { index: number, person: Person }): void {
             state.data[payload.index] = payload.person
+        },
+        personCreated(state: State, person: Person): void {
+            state.data.push(person)
         }
     },
     namespaced: true

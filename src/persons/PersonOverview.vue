@@ -1,5 +1,6 @@
 <template>
     <div id="person-list">
+        <router-link to="persons/new" >create new Person</router-link>
         <person-list :persons="persons" />
     </div>
 </template>

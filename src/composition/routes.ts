@@ -3,6 +3,7 @@ import { RouteConfig, Route } from "vue-router"
 import Dashboard from "./pages/Dashboard.vue"
 
 import PersonEdit from "@/persons/PersonEdit.vue"
+import PersonNew from "@/persons/PersonNew.vue"
 
 export const routes: RouteConfig[] = [
     { path: "/", component: Dashboard },
@@ -13,4 +14,5 @@ export const routes: RouteConfig[] = [
             id: Number.parseInt(route.params.id)
         })
     },
+    { path: "/persons/new", component: PersonNew }
 ]

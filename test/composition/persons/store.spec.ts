@@ -76,6 +76,14 @@ describe("person store", () => {
                 expect(personIndexById(2)).toEqual(-1)
             })
         })
+
+        describe("nextId", () => {
+            it("calculates the next Id", () => {
+                const calculatedId = storeOptions.modules!.persons.getters!.nextId(state.persons, undefined, state, undefined)
+                expect(calculatedId).toEqual(1)
+            })
+
+        })
     })
 
     describe("mutations", () => {

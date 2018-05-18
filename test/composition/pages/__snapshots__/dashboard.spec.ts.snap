@@ -6,7 +6,7 @@ exports[`Dashboard no data loaded renders an empty page 1`] = `
         <h1>Dashboard</h1>
     </section>
     <section>
-        <div id="person-list">
+        <div id="person-list"><a href="#/persons/new" class="">create new Person</a>
             <div id="person-list">
                 <div id="person" class="card">
                     <div class="card-body">
