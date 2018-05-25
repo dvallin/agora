@@ -34,13 +34,12 @@ export default class PersonEdit extends Vue {
     @Action("persons/updatePerson")
     protected updatePerson: (person: Person) => boolean
 
-    protected formData: { name: string } = { name: "" }
+    protected readonly formData: { name: string } = { name: "" }
 
     protected onReset(): void {
         const person: Person | undefined = this.personById(this.id)
         if (person !== undefined) {
-            const name = person.name
-            this.formData = { name }
+            this.formData.name = person.name
         }
     }
 
