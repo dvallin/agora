@@ -18,7 +18,7 @@ module.exports = {
         ".*\\.(vue)$": "<rootDir>/node_modules/vue-jest"
     },
     snapshotSerializers: ["<rootDir>/test/test-utils/jest-serializer.js"],
-    setupFiles: ["<rootDir>/test/setup"],
+    setupFiles: ["<rootDir>/test/setup", "jest-localstorage-mock"],
     coverageDirectory: "<rootDir>/coverage",
     collectCoverageFrom: [
         "src/**/*.{js,ts,vue}",
